@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: radial-gradient(rgb(0, 145, 255), rgb(0, 255, 157));
+  height: 100vh;
+}
+h1 {
+  font-family: "Dancing script", cursive;
+  font-size: 70px;
+  text-align: center;
+  margin: 50px 10px;
+  color: rgb(90, 139, 20);
+  text-shadow: 4px 4px 6px white;
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+  margin: auto;
+
+  padding: 30px 30px 0 30px;
+  border-radius: 15px;
+}
+.rows {
+  background: #2a6d57;
+  color: whitesmoke;
+  box-shadow: 2px 5px 8px black;
+  margin: 30px 0;
+  border-radius: 15px;
+}
+.rows span {
+  padding: 10px 5px;
+  display: block;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.rows span i {
+  float: right;
+
+  color: wheat;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.rows .p {
+  margin: 20px;
+  width: 80%;
+  height: 50vh;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 0.5s;
+  /* padding: 10vh 30px; */
+  border-top: 1px solid white;
+  font-size: 50px;
+  text-shadow: 2px 2px 6px white;
+  color: white;
+  font-weight: 600;
+  font-family: "Dancing Script", cursive;
+}
+.visible {
+  display: none;
+}
+#p1,
+#p2,
+#p3 {
+  margin-left: 0px;
+  width: 100%;
+}
+#p1 {
+  background: url("prime.jpg");
+  background-size: cover;
+}
+#p2 {
+  background: url("cute.jpg");
+  background-size: cover;
+}
+#p3 {
+  background: url("respect.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ri-file-reduce-line {
+  transform: rotate(90deg);
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .rows span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .rows {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #p1,
+  #p2,
+  #p3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 25px;
+  }
+}

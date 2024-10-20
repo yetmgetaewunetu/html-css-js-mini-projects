@@ -1,0 +1,92 @@
+body {
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  height: 80vh;
+  margin-top: 50px;
+  text-align: center;
+  font-family: sans-serif;
+
+  background: white;
+  border-radius: 15px;
+}
+
+.container h2 {
+  font-size: 60px;
+  margin-bottom: 50px;
+  color: blueviolet;
+  animation: h2anime;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes h2anime {
+  from {
+    text-shadow: 3px 3px 5px black, 4px 4px 5px blue;
+  }
+  to {
+    text-shadow: 4px 4px 5px red, 5px 5px 5px tomato;
+  }
+}
+.container span {
+  margin: 80px;
+  display: block;
+  font-size: 80px;
+  font-weight: 500;
+  text-shadow: 3px 3px 4px navy, 4px 4px 5px red;
+}
+
+.container button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.5s;
+  margin: 20px;
+}
+.container button:nth-child(1) {
+  background: rgb(255, 77, 0);
+  color: white;
+  box-shadow: 2px 2px 4px rgb(150, 77, 0);
+}
+.container button:nth-child(2) {
+  background: #000;
+  color: white;
+  box-shadow: 2px 2px 4px #111;
+}
+.container button:nth-child(3) {
+  background: rgb(6, 208, 6);
+  color: white;
+  box-shadow: 2px 2px 5px rgb(6, 108, 6);
+}
+.container button:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .container button {
+    margin: 0;
+    width: 80%;
+  }
+  .container h2 {
+    font-size: 2rem;
+  }
+}

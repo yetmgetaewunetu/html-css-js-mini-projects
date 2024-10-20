@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(wall.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+h1 {
+  margin: 100px 0 40px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  animation: header;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes header {
+  0% {
+    text-shadow: 2px 2px 3px blue;
+  }
+  20% {
+    text-shadow: 3px 3px 5px red;
+  }
+  40% {
+    text-shadow: 2px 2px 3px yellow;
+  }
+  60% {
+    text-shadow: 2px 2px 3px teal;
+  }
+  80% {
+    text-shadow: 2px 2px 3px rgb(255, 30, 191);
+  }
+  100% {
+    text-shadow: 2px 2px 3px red;
+    color: red;
+  }
+}
+.text {
+  color: rgb(244, 224, 224);
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  font-size: 20px;
+}
+.text span {
+  color: dodgerblue;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+.countdown {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+.countdown div {
+  background: #006769;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.countdown div h4 {
+  font-size: 55px;
+  font-family: sans-serif;
+}
+@media (max-width: 500px) {
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+    width: 90%;
+  }
+  .text {
+    width: 100%;
+    padding: 25px 15px;
+    font-size: 1rem;
+  }
+}

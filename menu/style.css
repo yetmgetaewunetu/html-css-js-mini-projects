@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  background: black;
+}
+img {
+  float: left;
+  width: 50%;
+  height: 100%;
+  aspect-ratio: 2;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+h1 {
+  text-align: center;
+  background: #32a852;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-repeat: repeat-x;
+  color: white;
+  padding: 10px;
+  font-size: 5vw;
+  cursor: grab;
+  text-shadow: 2px 2px 3px black;
+  font-family: "Dancing script", cursive;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 30%;
+  color: white;
+
+  border-radius: 5px;
+}
+h1:hover::after {
+  animation: anime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes anime {
+  from {
+    left: -999%;
+    border: 2px solid;
+  }
+  to {
+    left: 35%;
+    border: 2px solid;
+  }
+}
+h1 img {
+  width: 100px;
+  margin-right: 50px;
+  background: #000;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.buttons button {
+  background: transparent;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 1.4vw;
+  width: 24%;
+  font-weight: 100;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  /* border: 1px solid white; */
+  box-shadow: 3px 3px 6px blue;
+}
+
+.buttons button:hover {
+  box-shadow: 2px 2px 4px white;
+}
+.buttons .active {
+  color: whitesmoke;
+  box-shadow: 2px 2px 2px white;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  place-content: center;
+  padding: 20px 10px 10px 20px;
+  margin-bottom: 40px;
+}
+.items {
+  width: 95%;
+  text-align: center;
+
+  background: white;
+  /* border: 1px solid; */
+  border-radius: 5px;
+
+  text-align: center;
+}
+.internal {
+  width: 50%;
+  float: right;
+  margin: 0px auto;
+  text-align: justify;
+  padding: 20px 25px;
+  color: rgb(5, 107, 190);
+  line-height: 2;
+}
+
+.sp1 {
+  display: block;
+  float: left;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  padding-left: 10px;
+}
+.sp2 {
+  text-align: center;
+  font-size: 1.5vw;
+  display: block;
+  float: right;
+  padding-right: 10px;
+  color: #32a852;
+}
+@media (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container div {
+    display: grid;
+    padding: 0;
+  }
+  .container div * {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .buttons {
+    width: 90%;
+  }
+  .buttons button {
+    font-size: 2vw;
+  }
+  .sp1,
+  .sp2 {
+    font-size: 3vw;
+  }
+  img {
+    width: 50%;
+    margin: auto;
+    object-fit: cover;
+
+    aspect-ratio: 1;
+  }
+}

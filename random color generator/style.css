@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+nav {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-around;
+  background: wheat;
+  color: rgb(0, 119, 255);
+}
+.container {
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 60px;
+}
+.container h2 {
+  background: #000;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px white;
+  padding: 15px;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+}
+.container h2 span {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.container button {
+  cursor: pointer;
+  margin-top: 30px;
+  background: black;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  box-shadow: 1px 1px 5px green;
+  transition: all 0.3s;
+  animation: animate-btn;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes animate-btn {
+  from {
+    box-shadow: 3px 3px 5px blue;
+  }
+  to {
+    box-shadow: 3px 3px 8px green;
+  }
+  to {
+    box-shadow: 4px 4px 9px white;
+  }
+  to {
+    box-shadow: 4px 4px 9px red;
+  }
+}
+.container button:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 400px) {
+  .container h2 {
+    font-size: 16px;
+  }
+}

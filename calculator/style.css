@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url("Latar.jpg");
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 80%;
+  max-width: 400px;
+
+  margin: auto;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 35px;
+}
+#display {
+  border-radius: 35px 35px 0 0;
+  border: none;
+  font-size: 40px;
+  overflow: hidden;
+  outline: none;
+  padding: 30px;
+  height: 140px;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: right;
+}
+.keys {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keys div {
+  display: flex;
+  justify-content: start;
+  width: 90%;
+}
+button {
+  border: none;
+  outline: none;
+  color: rgb(92, 143, 255);
+  font-size: 30px;
+  font-weight: bold;
+  background: #181717ec;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  margin: 10px;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #5783feec;
+}
+.blue {
+  background: rgb(42, 127, 247);
+  color: white;
+}
+.blue:hover {
+  background: rgb(42, 155, 247);
+}
+.grey {
+  background: rgb(99, 99, 99);
+  color: white;
+}
+.btn0 {
+  width: 140px;
+  height: 60px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}

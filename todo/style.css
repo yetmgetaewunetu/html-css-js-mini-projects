@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background: linear-gradient(135deg, blue 0%, red);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 540px;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+h1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 30px;
+}
+h1 img {
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.input {
+  width: 80%;
+  display: flex;
+  border-radius: 10px;
+  background: lightgray;
+  justify-content: space-between;
+  padding: 10px;
+}
+input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+button {
+  padding: 10px 30px;
+
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: rgb(248, 115, 43);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  padding: 15px 50px;
+  font-size: 16px;
+  margin-left: 10px;
+
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+ul li::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+  background-image: url("checkbox.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.active {
+  text-decoration: line-through;
+}
+ul li.active::before {
+  border-radius: 50px;
+  background-image: url("check.jpg");
+}
+ul li span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 50px;
+  position: absolute;
+  right: 45px;
+  top: 5px;
+}
+span:hover {
+  background: lightgrey;
+}
+
+@media (max-width: 700px) {
+  .todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .input button {
+    width: auto;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .input input {
+    padding: 10px 5px;
+    border-bottom: 2px solid gray;
+  }
+}

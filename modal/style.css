@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  /*    background: url('wall.jpg');*/
+  background: rgb(20, 20, 40);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+
+  align-content: center;
+
+  align-items: center;
+  justify-content: center;
+}
+.container .content {
+  background: linear-gradient(120deg, blue, red);
+  width: 60vh;
+  color: whitesmoke;
+  min-width: 500px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+.container .content h1 {
+  margin: 20px 5px;
+}
+.container .content button {
+  background: transparent;
+  padding: 6px 15px;
+  color: whitesmoke;
+  border-radius: 15px;
+  font-size: 15px;
+  border: 0;
+  outline: 0;
+  box-shadow: 2px 2px 4px whitesmoke;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.container .content button:hover {
+  box-shadow: 2px 2px 15px whitesmoke;
+}
+.modalcontainer {
+  width: 100%;
+  height: 100vh;
+  background: rgba(27, 143, 201, 0.5);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modalcontainer .content {
+  width: 70vw;
+  background: linear-gradient(120deg, rgb(80, 10, 150), rgb(100, 10, 100));
+  max-width: 600px;
+  text-align: center;
+
+  padding: 20px;
+  border-radius: 14px;
+}
+.modalcontainer .content i {
+  color: rgb(215, 8, 8);
+  font-size: 30px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.8s;
+}
+.modalcontainer .content i:hover {
+  transform: rotate(360deg);
+}
+.modalcontainer .content h1 {
+  margin: 50px 0;
+  color: whitesmoke;
+}
+.invisible {
+  visibility: hidden;
+  z-index: -10;
+}
+
+@media (max-width: 800px) {
+}

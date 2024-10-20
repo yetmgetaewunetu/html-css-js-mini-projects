@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+body{
+    height: 100vh;
+    background: #000;
+}
+h1{
+    font-family: sansserif;
+    font-size: 35px;
+    position: relative;
+    transition: all 0.8s;
+}
+
+h1 span{
+    color: rgb(0, 145, 255);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+nav{
+    width: 100%;
+    padding: 10px;
+    background: rgb(254, 254, 254);
+    padding: 30px 0;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+.first{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    font-size: 22px;
+    justify-content: space-between;
+    transition: all 0.8s;
+}
+.first li, .last li{
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 500;
+    
+}
+.first li:hover{
+    color: rgb(0, 145, 255);
+   
+}
+.first2{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    font-size: 22px;
+    justify-content: space-between;
+    transition: all 0.8s;
+}
+.first2 li{
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 500;
+    
+}
+.first2 li:hover{
+    color: rgb(0, 145, 255);
+   
+}
+.last{
+    list-style: none;
+    display: flex;
+    color: rgb(0, 145, 255);
+    font-size: 22px;
+    width: 15%;
+    justify-content: space-between;
+}
+.last li:hover{
+    color: #000;
+}
+.ri-menu-line{
+    padding: 10px;
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.ri-menu-line::before{
+    transition: all 0.3s;
+}
+.ri-menu-line:hover{
+    color: rgb(0, 4, 255);
+    
+    
+}
+.hovered{
+    transform: rotate(90deg);
+}
+
+.hovered::before{
+    color: rgb(0, 145, 255);
+    transform: rotate(90deg);
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+.mouseOut::before{
+    color: rgb(0, 145, 255);
+    transition: all 0.5s;
+    border: 3px solid rgb(0, 145, 255);
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+.hider{
+    display: flex;
+}
+ 
+
+@media screen and  (max-width:700px){
+    nav{
+        display: block;
+    }
+    .hider{
+        display: none;
+    }
+    .first{
+        display: block;
+        width: 100%;
+        color: #000;
+        color: green;
+        padding: 20px 45px;
+        border-radius: 10px ;
+    }
+    .first li:hover{
+        
+        transform: translateY(5px);
+        
+    }
+    .first2{
+        display: none;
+        
+    }
+    
+    h1{
+        padding: 0 20px;
+        width: 80%;
+        float: left;
+    }
+    .last {
+        display: none;
+    }
+    .ri-menu-line{
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        
+    }
+}

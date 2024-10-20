@@ -1,0 +1,52 @@
+body {
+  background: linear-gradient(120deg, dodgerblue, tomato);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100svh;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-align: center;
+}
+label {
+  font-size: 22px;
+  color: whitesmoke;
+  padding: 5px;
+}
+input {
+  padding: 7px;
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background: dodgerblue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 14px;
+  font-size: 17px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+  margin-left: 30px;
+}
+button:hover {
+  background: rgb(9, 83, 158);
+}
+article {
+  width: 60%;
+  padding: 10px;
+  background: white;
+  height: 60vh;
+  margin: 30px auto;
+  overflow-y: scroll;
+  border-radius: 0 0 5px 5px;
+}

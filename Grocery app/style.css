@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: teal;
+}
+.container {
+  width: 80%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  min-height: 300px;
+  border-radius: 10px;
+}
+.warning {
+  display: block;
+  visibility: hidden;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+
+  padding: 3px 0;
+
+  border-radius: 5px;
+}
+.alert {
+  background: rgba(216, 16, 16, 0.522);
+  color: rgb(255, 255, 255);
+  visibility: visible;
+}
+.success {
+  background: rgba(5, 253, 5, 0.602);
+  visibility: visible;
+  color: green;
+}
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+.add-item {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+}
+input {
+  outline: none;
+  border: none;
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 16px;
+  background: rgb(200, 200, 200);
+}
+button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+button:hover {
+  background: #000;
+}
+.items {
+  padding: 0 20px;
+}
+.items span img {
+  width: 20px;
+}
+.items span {
+  width: 80%;
+  display: flex;
+}
+.items span:hover {
+  background: lightblue;
+}
+.items span p {
+  width: 90%;
+  padding-left: 10px;
+}
+.items span button {
+  padding: 2px 0 0;
+  background: transparent;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .add-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .add-item input {
+    width: 100%;
+  }
+}

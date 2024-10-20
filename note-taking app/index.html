@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note taking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><img alt="note image" src="notes.png" /> Note Ninja</h1>
+      <button onclick="addNote()">
+        Add Note <img alt="pen image" src="edit.png" />
+      </button>
+      <div class="note-container">
+        <input
+          autofocus
+          class="input-box"
+          type="text"
+          placeholder="Start typing your note here..."
+        />
+        <div class="notess"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

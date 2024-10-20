@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url('wall.jpg');
+    background-size: cover;
+}
+.side{
+    padding: 30px;
+    height: 100vh;
+    width: 40vw;
+    background: rgb(22, 128, 149);
+    box-shadow: 5px 5px 10px black;
+    position: relative;
+    float: left;
+    transition: all 1s;
+}
+.side h1{
+    font-size: 3rem;
+    margin: -20px;
+    text-shadow: 1px 1px 4px lime;
+}
+.side h1 span{
+    color: black;
+    text-shadow: 1px 1px 4px blue;
+}
+.side li{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.side li:hover{
+    color:rgb(145, 245, 5) ;
+}
+#close{
+    color: rgb(145, 245, 5);
+    font-size: 30px;
+    right: 0;
+    color: white;
+    position: absolute;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 2s;
+}
+#close:hover{
+    color: greenyellow;
+    transform: rotate(720deg);
+}
+.top{
+    
+    margin-top: 40px;
+    list-style: none;
+    line-height: 4.5;
+    color: white;
+    
+}
+.hidden {
+    display: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+}
+footer ul{
+    list-style: none;
+    
+ 
+}
+footer ul li{
+    color: white;
+    font-size: 30px;
+    float: left;
+    padding: 5px;
+}
+footer ul li:hover{
+    color: rgb(5, 29, 245)
+}
+
+
+.menu{
+    float: right;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 35px;
+    transition: all 0.5s;
+    animation: menuAnime1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.ri-menu-line{
+    transition: all 0.5s;
+}
+.active{
+    float: right;
+    transition: all;
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 10px 30px;
+    border-radius: 10px;
+    transform: rotate(90deg);
+    font-size: 35px;
+    border: 2px solid rgb(5, 176, 233);
+    animation: menuAnime;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes menuAnime{
+    from{
+        color:white;
+        border: 2px solid white;
+    }
+    to{
+        color: rgb(5, 176, 233);
+        transform: scale(1.5) rotate(90deg);
+        border: 2px solid rgb(5, 176, 233);
+        /* padding: 10px 10px; */
+    }
+}
+@keyframes menuAnime1{
+    from{
+        color:white;
+
+        
+    }
+    to{
+        color: rgb(5, 176, 233);
+        transform: scale(1.5);
+        
+        /* padding: 10px 10px; */
+    }
+}
+@media (max-width:700px){
+    .side{
+        width:100vw;
+        z-index: 1;
+    }
+}
